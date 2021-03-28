@@ -11,57 +11,57 @@
     <title>Web Visualization Dashboard (Latitude) </title>
   </head>
   <body>
-    <h1>Latitude</h1>
+    <!-- <h1>Summary: Latitude vs. X </h1>
+    <p>The purpose of this project is to provide links to visualiztions and data compiled from a weather project that analyzed how weather changes closer to the equator. In order to visualize weather vs. latitude, data was pulled from the OpenWeatherMap API, assembled into a dataset, and plotted using Matplotlib.</p>
+    <p>The visualizations you will find in the navigation bar compare latitude vs. cloudiness, humidity, max temperature, and wind, respectively, along with a brief description. You will also be able to navigate into the comparisons page which contains all of the visualizations on the same page in order to easily compare them. The data can be found on the data page and accessed via the navigation bar.</p> -->
 
-
-<!--Add to each page-->
     <!--The website must, at the top of every page, have a navigation menu-->
     <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
+      <button class="dropbtn">Latitude</button>
       <div class="dropdown-content">
+        <a href="landing_index.html">Landing</a>
+        <a href="cloudiness_viz_index.html">Cloudiness Visualiztion</a>
+        <a href="humidity_viz_index.html">Humidity Visualization</a>
+        <a href="maxTemp_viz_index.html">Max Temperature Visualization</a>
+        <a href="wind_viz_index.html">Wind Visualization</a>
         <a href="comparisons_index.html">Comparisons</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <a href="data_index.html">Data</a>
       </div>
     </div>
 
-    <!--Landing Page-->
+    <h1>Summary: Latitude vs. X </h1>
+    <p>The purpose of this project is to provide links to visualiztions and data compiled from a weather project that analyzed how weather changes closer to the equator. In order to visualize weather vs. latitude, data was pulled from the OpenWeatherMap API, assembled into a dataset, and plotted using Matplotlib.</p>
+    <p>The visualizations you will find in the navigation bar compare latitude vs. cloudiness, humidity, max temperature, and wind, respectively, along with a brief description. You will also be able to navigate into the comparisons page which contains all of the visualizations on the same page in order to easily compare them. The data can be found on the data page and accessed via the navigation bar.</p>
+
     <!--Links to Visuzlization Page-->
     <!--There should be a sidebar containing preview images of each plot, 
         and clicking an image should take the user to that visualization-->
 
-        <link href="visualization_index.html">
-
-        <a href="visualization_index.html">
-          <img src= "visualizations/comparison-lg.png" alt="comarison"
+    <h1>Visualizations</h1>
+        <link href="cloudiness_viz_index.html">
+        <a href="cloudiness_viz_index.html">
+          <img src= "assets/cloudiness.png" alt="Cloudiness"
           width="width"height="height">
         </a>
-        
-    <!--Visualization Pages-->
-    <!--Descriptive title and heading tag-->
-    <!--Plot/visualization for the selected comparison-->
-    <!--Paragraph describing the plot and its significance-->
 
+        <link href="himidity_viz_index.html">
+        <a href="humidity_viz_index.html">
+          <img src= "assets/humidity.png" alt="Humidity"
+          width="width"height="height">
+        </a>
 
-    <!--Comparison's Page-->
-    <!--Contains all of the visualizations on the same page-->
-    <!--Uses a Bootstrap grid for the visualizations: 
-        Grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens-->
+        <link href="maxTemp_viz_index.html">
+        <a href="maxTemp_viz_index.html">
+          <img src= "assets/maxTemp.png" alt="maxTemp"
+          width="width"height="height">
+        </a>
 
-
-    <!--Data Page-->
-    <!--Displays a responsive table containing the data used in the visualizations-->
-    <!--The table must be a bootstrap table component-->
-    <!--The data must come from exporting the .csv file as HTML, or converting it to HTML-->
-    
-    <!--ME: Create responsive table-->
-    <div class="table-responsive">
-        <table class="table">
-          ...
-        </table>
-      </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
+        <link href="wind_viz_index.html">
+        <a href="wind_viz_index.html">
+          <img src= "assets/wind.png" alt="Humidity"
+          width="width"height="height">
+        </a>
+      
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
