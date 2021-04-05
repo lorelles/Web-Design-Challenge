@@ -15,54 +15,11 @@
 
 <body>
   <!--The website must, at the top of every page, have a navigation menu-->
-  <div class="dropdown">
-    <button class="dropbtn">Latitude</button>
-    <div class="dropdown-content">
-      <a href="landing_index.html">Landing</a>
-      <a href="cloudiness_viz_index.html">Cloudiness Visualiztion</a>
-      <a href="humidity_viz_index.html">Humidity Visualization</a>
-      <a href="maxTemp_viz_index.html">Max Temperature Visualization</a>
-      <a href="wind_viz_index.html">Wind Visualization</a>
-      <a href="comparisons_index.html">Comparisons</a>
-      <a href="data_index.html">Data</a>
-    </div>
-  </div>
-
   <!-- Dropdown menu named "Plots" that displays each visualization page -->
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="cloudiness_viz_index.html">Cloudiness</a>
-    <a class="dropdown-item" href="humidity_viz_index.htm">Humidity</a>
-    <a class="dropdown-item" href="maxTemp_viz_index.html">Max Temperature</a>
-    <a class="dropdown-item" href="wind_viz_index.html">Wind Speed</a>
-  </div>
-
   <!-- Sidebar containing images of each plot linking to visualization -->
 
-  <!-- Try adding drop down toggle -->
-  <!-- Try incorporating all within single navbar -->
-<!-- https://getbootstrap.com/docs/4.2/components/navbar/ -->
-
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="comparisons_index.html">Plots</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="maxTemp_viz_index.html" id="navbarDropdown" role="button"
-          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Plots
-        </a>
-        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="cloudiness_viz_index.html">Cloudiness</a>
-          <a class="dropdown-item" href="humidity_viz_index.html">Humidity</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="maxTemp_viz_index.html">Max Temp</a>
-        </div> -->
-      </li>
-      </div>
-    
-    </button>
-    <!-- <div class="dropdown">
+    <div class="dropdown">
       <button class="dropbtn">Latitude</button>
       <div class="dropdown-content">
         <a href="landing_index.html">Landing</a>
@@ -73,134 +30,33 @@
         <a href="comparisons_index.html">Comparisons</a>
         <a href="data_index.html">Data</a>
       </div>
-      </button> -->
     </div>
-  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="cloudiness_viz_index.html">Cloudiness <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="humidity_viz_index.html">Humidity</a>
-        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="maxTemp_viz_index.html" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Max Temp
-          </a>
-          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="cloudiness_viz_index.html">Cloudiness</a>
-            <a class="dropdown-item" href="humidity_viz_index.html">Humidity</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="maxTemp_viz_index.html">Max Temp</a>
-          </div> -->
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-content">
+              <a href="cloudiness_viz_index.html">Cloudiness Visualiztion</a>
+              <a href="humidity_viz_index.html">Humidity Visualization</a>
+              <a href="maxTemp_viz_index.html">Max Temperature Visualization</a>
+              <a href="wind_viz_index.html">Wind Visualization</a>
+            </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="wind_viz_index.html" tabindex="-1" aria-disabled="true">Wind Speed</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="comparisons_index.html">Comparisons<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="data_index.html">Data<span class="sr-only"></span></a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
 
-
-  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-        </li>
-      </ul>
-    </div> -->
-
-  <!-- Links to data, comparisons -->
-  <div class="row">
-    <div class="col">
-      <!-- <h3 class="text-center">Nav Tabs</h3> -->
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="comparisons_index.html">Plots</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="cloudiness_viz_index.html">Cloudiness</a>
-              <a class="dropdown-item" href="humidity_viz_index.htm">Humidity</a>
-              <a class="dropdown-item" href="maxTemp_viz_index.html">Max Temperature</a>
-              <a class="dropdown-item" href="wind_viz_index.html">Wind Speed</a>
-            </div>
-
-         
-        
-        Links to data, comparisons
-        <li class="nav-item">
-          <a class="nav-link active" href="data_index.html">Data</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="comparisons_index.html">Comparisons</a>
-        </li>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="cloudiness_viz_index.html">Cloudiness</a>
-          <a class="dropdown-item" href="humidity_viz_index.htm">Humidity</a>
-          <a class="dropdown-item" href="maxTemp_viz_index.html">Max Temperature</a>
-          <a class="dropdown-item" href="wind_viz_index.html">Wind Speed</a>
-        </div>
-        <!-- Sidebar containing images of each plot linking to visualization -->
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="cloudiness_viz_index.html">Plots</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="cloudiness_viz_index.html">Cloudiness <span
-                    class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="humidity_viz_index.html">Humidity</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="cloudiness_viz_index.html" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Cloudiness -->
-        <!-- </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav> -->
-        <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
-          </ul>
-    </div>
-  </div>
-
+  <!-- Explanation of project -->
   <h1>Summary: Latitude vs. X </h1>
   <p>The purpose of this project is to provide links to visualiztions and data compiled from a weather project that
     analyzed how weather changes closer to the equator. In order to visualize weather vs. latitude, data was pulled from
@@ -210,7 +66,7 @@
     which contains all of the visualizations on the same page in order to easily compare them. The data can be found on
     the data page and accessed via the navigation bar.</p>
 
-  <!-- Links to Visuzlization Page--> -->
+  <!-- Links to Visuzlization Page--> 
   <!--There should be a sidebar containing preview images of each plot, 
         and clicking an image should take the user to that visualization-->
 
@@ -235,17 +91,10 @@
     <img src="assets/wind.png" alt="Humidity" width="width" height="height">
   </a>
 
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
 </body>
 
 </html>
