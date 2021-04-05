@@ -38,13 +38,44 @@
 
   <!-- Sidebar containing images of each plot linking to visualization -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Plots</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Try adding drop down toggle -->
+  <!-- Try incorporating all within single navbar -->
+<!-- https://getbootstrap.com/docs/4.2/components/navbar/ -->
 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="comparisons_index.html">Plots</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="maxTemp_viz_index.html" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="cloudiness_viz_index.html">Cloudiness</a>
+          <a class="dropdown-item" href="humidity_viz_index.html">Humidity</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="maxTemp_viz_index.html">Max Temp</a>
+        </div> -->
+      </li>
+      </div>
+    
+    </button>
+    <!-- <div class="dropdown">
+      <button class="dropbtn">Latitude</button>
+      <div class="dropdown-content">
+        <a href="landing_index.html">Landing</a>
+        <a href="cloudiness_viz_index.html">Cloudiness Visualiztion</a>
+        <a href="humidity_viz_index.html">Humidity Visualization</a>
+        <a href="maxTemp_viz_index.html">Max Temperature Visualization</a>
+        <a href="wind_viz_index.html">Wind Visualization</a>
+        <a href="comparisons_index.html">Comparisons</a>
+        <a href="data_index.html">Data</a>
+      </div>
+      </button> -->
+    </div>
+  
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -58,12 +89,12 @@
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Max Temp
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+          <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="cloudiness_viz_index.html">Cloudiness</a>
+            <a class="dropdown-item" href="humidity_viz_index.html">Humidity</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+            <a class="dropdown-item" href="maxTemp_viz_index.html">Max Temp</a>
+          </div> -->
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="wind_viz_index.html" tabindex="-1" aria-disabled="true">Wind Speed</a>
